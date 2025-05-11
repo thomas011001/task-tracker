@@ -1,0 +1,58 @@
+.main-task-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  align-items: center;
+  h3 {
+    font-family: "Playfair Display";
+  }
+}
+
+.main-task {
+  .sub-tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    hr {
+      opacity: 0.5;
+    }
+    .sub-task {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        input {
+          cursor: pointer;
+        }
+        gap: 2px;
+        span {
+          display: inline-block;
+          max-width: 200px;
+          white-space: normal;
+          word-wrap: break-word;
+        }
+      }
+    }
+  }
+}
+
+.delete {
+  line-height: 0;
+  background-color: white;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+svg {
+  width: 28px;
+  transition: 200ms;
+  transform: translateY(2px);
+}
+.delete:hover svg {
+  fill: rgb(206, 10, 10);
+  transform: translateY(-5px);
+}

@@ -1,0 +1,29 @@
+.main-tasks-btns {
+  display: flex;
+  flex-direction: column;
+  // gap: 10px;
+  padding: 5px 0;
+  border-radius: 10px;
+  border: 2px black solid;
+  margin: 10px 0;
+  min-height: 250px;
+
+  button {
+    font-family: "Playfair Display";
+    border: none;
+    background-color: white;
+    text-align: start;
+    font-size: larger;
+    padding: 5px 20px;
+    cursor: pointer;
+    &:hover {
+      background-color: #f1f1f1;
+    }
+  }
+}
+
+@media (max-width: 335px) {
+  .main-tasks-btns button {
+    font-size: medium;
+  }
+}
