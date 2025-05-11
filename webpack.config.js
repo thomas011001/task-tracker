@@ -18,6 +18,9 @@ module.exports = {
       template: "./src/index.html",
     }),
   ],
+  performance: {
+    hints: false,
+  },
   module: {
     rules: [
       {
@@ -27,6 +30,10 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: ["style-loader", "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
       },
     ],
   },
